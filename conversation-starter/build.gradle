@@ -39,7 +39,7 @@ dependencies {
 
 def libGroupId = 'com.github.lalbuquerque.pipa'
 def libArtifactId = 'conversation-starter'
-def libVersion = '0.0.1'
+def libVersion = '0.0.2'
 def libDesc = 'A lib that allows you to start a conversation on most famous mobile messengers'
 def libLicenses = ['Apache-2.0']
 def libVCSUrl = 'https://github.com/lalbuquerque/conversation-starter'
