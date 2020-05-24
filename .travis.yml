@@ -33,8 +33,23 @@ script:
   - ./gradlew clean build
 
 deploy:
-  provider: script
-  script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
-  cleanup: true
-  on:
-    tags: true
+  - provider: releases
+    token: $GITHUB_API_KEY
+    file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/debug/app-debug.apk
+    cleanup: true
+    name: dev-build-$TRAVIS_TAG
+    release_notes: Automatic build of $TRAVIS_BRANCH ($TRAVIS_COMMIT) built by Travis CI on $(date +'%F %T %Z').
+    prerelease: true
+    overwrite: true
+    target_commitish: $TRAVIS_COMMIT
+    on:
+      tags: true
+
+  - provider: script
+    script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
+    cleanup: true
+    on:
+      tags: true
+
+after_deploy:
+  - rm -rf $TRAVIS_BUILD_DIR/app/build/outputs
