@@ -1,0 +1,3 @@
+rootProject.name='Pipa App'
+include ':app'
+include ':conversation-starter'

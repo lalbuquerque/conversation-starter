@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pipa App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_conversation_starter">Conversation Starter</string>
+</resources>
