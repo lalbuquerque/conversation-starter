@@ -41,7 +41,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-//    implementation 'com.github.lalbuquerque.pipa:conversation-starter:0.0.2'
+//    implementation 'com.github.lalbuquerque.pipa:conversation-starter:0.0.3'
     implementation project(':conversation-starter')
 
     implementation 'com.google.dagger:dagger-android:2.27'
