@@ -33,6 +33,12 @@ script:
   - ./gradlew clean build
 
 deploy:
+  - provider: script
+    script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
+    skip_cleanup: true
+    on:
+      tags: true
+
   - provider: releases
     token: $GITHUB_API_KEY
     file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/debug/app-debug.apk
@@ -45,11 +51,6 @@ deploy:
     on:
       tags: true
 
-  - provider: script
-    script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
-    skip_cleanup: true
-    on:
-      tags: true
 
 after_deploy:
   - rm -rf $TRAVIS_BUILD_DIR/app/build/outputs
