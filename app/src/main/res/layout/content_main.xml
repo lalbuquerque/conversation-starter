@@ -33,6 +33,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:startIconContentDescription="Phone number"
+                app:startIconTint="@color/primary_light"
                 app:startIconDrawable="@android:drawable/stat_sys_phone_call">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -50,6 +51,7 @@
                 android:hint="Message"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:startIconTint="@color/primary_light"
                 app:startIconDrawable="@android:drawable/ic_dialog_email">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -109,6 +111,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:startIconContentDescription="Telegram User ID"
+                app:startIconTint="@color/primary_light"
                 app:startIconDrawable="@android:drawable/sym_action_chat">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -163,6 +166,7 @@
                 android:hint="Facebook User ID"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:startIconTint="@color/primary_light"
                 app:startIconDrawable="@android:drawable/sym_action_chat">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -180,6 +184,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:startIconContentDescription="Phone number"
+                app:startIconTint="@color/primary_light"
                 app:startIconDrawable="@android:drawable/stat_sys_phone_call">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -238,6 +243,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:startIconContentDescription="Skype Username"
+                app:startIconTint="@color/primary_light"
                 app:startIconDrawable="@android:drawable/sym_action_chat">
 
                 <com.google.android.material.textfield.TextInputEditText
