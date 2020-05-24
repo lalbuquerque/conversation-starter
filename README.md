@@ -1,1 +1,1 @@
-# conversation-starter
+# conversation-starter [![Build Status](https://travis-ci.com/lalbuquerque/conversation-starter.svg?branch=master)](https://travis-ci.com/lalbuquerque/conversation-starter)
