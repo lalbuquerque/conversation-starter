@@ -1,4 +1,4 @@
-# Conversation Starter [![Build Status](https://travis-ci.com/lalbuquerque/conversation-starter.svg?branch=master)](https://travis-ci.com/lalbuquerque/conversation-starter)
+# Conversation Starter [![Build Status](https://travis-ci.com/lalbuquerque/conversation-starter.svg?branch=master)](https://travis-ci.com/lalbuquerque/conversation-starter) [ ![Download](https://api.bintray.com/packages/lalbuquerque/maven/com.github.lalbuquerque.pipa%3Aconversation-starter/images/download.svg) ](https://bintray.com/lalbuquerque/maven/com.github.lalbuquerque.pipa%3Aconversation-starter/_latestVersion)
 
 To add this library to your app, first you need to add this to your root `build.gradle`:
 
