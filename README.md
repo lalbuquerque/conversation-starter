@@ -11,7 +11,7 @@ repositories {
 and this to the `build.gradle` of your module:
 
 ```
-implementation 'com.github.lalbuquerque.pipa:conversation-starter:0.0.2'
+implementation 'com.github.lalbuquerque.pipa:conversation-starter:0.0.4'
 ```
 
 
