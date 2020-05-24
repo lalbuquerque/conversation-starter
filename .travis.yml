@@ -36,7 +36,7 @@ deploy:
   - provider: releases
     token: $GITHUB_API_KEY
     file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/debug/app-debug.apk
-    cleanup: true
+    skip_cleanup: true
     name: dev-build-$TRAVIS_TAG
     release_notes: Automatic build of $TRAVIS_BRANCH ($TRAVIS_COMMIT) built by Travis CI on $(date +'%F %T %Z').
     prerelease: true
@@ -47,7 +47,7 @@ deploy:
 
   - provider: script
     script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
-    cleanup: true
+    skip_cleanup: true
     on:
       tags: true
 
