@@ -37,4 +37,4 @@ deploy:
   script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
   cleanup: true
   on:
-    branch: master
+    tags: true
