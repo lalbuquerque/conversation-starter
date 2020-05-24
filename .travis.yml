@@ -34,7 +34,7 @@ script:
 
 deploy:
   provider: script
-  script: ./gradlew :clean :conversation-starter:assemble :conversation-starter:bintrayUpload
+  script: ./gradlew :clean :conversation-starter:assembleRelease :conversation-starter:bintrayUpload
   cleanup: true
   on:
     branch: master
